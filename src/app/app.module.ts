@@ -7,10 +7,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { MrSerialComponent } from '../components/mr-serial/mr-serial';
+import { MrRgbyComponent } from '../components/mr-rgby/mr-rgby';
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+	HomePage,
+	MrSerialComponent,
+	MrRgbyComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+	HomePage,
+	MrSerialComponent,
+	MrRgbyComponent
   ],
   providers: [
     StatusBar,

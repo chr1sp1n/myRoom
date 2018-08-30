@@ -1,0 +1,23 @@
+<ion-card>
+	<h2>{{rgby.name}}</h2>
+	<ion-list>
+		<ion-item>
+			<ion-range [(ngModel)]="rgby.red" color="danger">
+				<ion-icon range-left small name="ios-sunny-outline"></ion-icon>
+				<ion-icon range-right name="sunny" color="danger"></ion-icon>
+			</ion-range>
+		</ion-item>
+		<ion-item>
+			<ion-range [(ngModel)]="rgby.green" color="secondary">
+				<ion-icon range-left small name="ios-sunny-outline"></ion-icon>
+				<ion-icon range-right name="sunny" color="secondary"></ion-icon>
+			</ion-range>
+		</ion-item>
+		<ion-item>
+			<ion-range [(ngModel)]="rgby.blue">
+				<ion-icon range-left small name="ios-sunny-outline"></ion-icon>
+				<ion-icon range-right name="sunny" color="primary"></ion-icon>
+			</ion-range>
+		</ion-item>
+	</ion-list>
+</ion-card>
